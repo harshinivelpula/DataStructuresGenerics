@@ -1,10 +1,18 @@
-﻿namespace DataStructureGeneric
+﻿using DataStructuresGeneric;
+
+namespace DataStructureGeneric
 {
     class Program
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("welcome to data structure problem using generics");
+            Dequeue DQueue = new Dequeue();
+            DQueue.Enqueue(56);
+            DQueue.Enqueue(30);
+            DQueue.Enqueue(70);
+            DQueue.Dequeu();
+            DQueue.Display();// this.top=this.top.next
+            Console.ReadKey();
         }
     }
 }
